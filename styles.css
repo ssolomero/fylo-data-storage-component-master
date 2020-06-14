@@ -1,0 +1,158 @@
+
+html, body {
+  height: 100%;
+  background: url("images/bg-desktop.svg");
+  background-color: hsl(229, 57%, 11%);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  font-family: Raleway;
+}
+
+.container-fluid {
+  padding: 15%;
+}
+
+/* Action container */
+.action-container {
+  margin: auto;
+  background-color: hsl(228, 56%, 26%);
+  padding: 12%;
+  border-radius: 10px 75px 10px 10px;
+}
+button {
+  background-color: hsl(229, 57%, 11%);
+  border: none;
+  border-radius: 7px;
+  padding: 10px;
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  margin-bottom: 8px;
+}
+.action-buttons {
+  margin-top: 30px;
+}
+
+/* Storage Container */
+.storage-container {
+  position: absolute;
+  bottom: 0;
+  background-color: hsl(228, 56%, 26%);
+  color: hsl(243, 100%, 93%);
+  width: 95.5%;
+  border-radius: 10px;
+  padding: 5% 8%;
+  height: 150px;
+}
+.storage-bar {
+  position: relative;
+  margin-bottom: 8px;
+}
+.capacity-bar {
+  width: 100% ;
+  height: 16px;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 10px;
+  z-index: 1;
+}
+.used-bar {
+  position: absolute;
+  width: 81.5% ;
+  height: 16px;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 10px;
+  z-index: 2;
+  float: left;
+}
+.used-bar-end {
+  margin-top: 2px;
+  position: absolute;
+  background-color: white;
+  border-radius: 100%;
+  height: 12px;
+  width: 12px;
+  z-index: 3;
+  right: 2px;
+}
+.storage-description {
+  font-size: .9rem;
+}
+.storage-gb {
+  display: inline;
+  clear: both;
+  width: 100%;
+  font-weight: 700;
+  font-size: .9rem;
+}
+#min-gb {
+  float: left;
+}
+#max-gb {
+  float: right;
+}
+.gb-component {
+  top: -40px;
+  right: 8%;
+  position: absolute;
+}
+.gb-left-container {
+  background-color: white;
+  color: gray;
+  font-weight: 600;
+  font-size: .9rem;
+  margin: auto;
+  padding: 8px 20px;
+  border-radius: 10px;
+}
+.gb-left{
+  margin: auto;
+}
+.gb-number {
+  color: black;
+  font-size: 2rem;
+}
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-top: 25px solid white;
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 992px) {
+
+  .action-container {
+    padding: 5%;
+    margin-bottom: 20px;
+  }
+
+  .storage-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  .gb-component {
+    bottom: -40px;
+    top: inherit;
+    right: auto;
+    position: relative;
+    margin: 0 20%;
+  }
+
+  .triangle-down {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 25% 7%;
+  }
+
+}
